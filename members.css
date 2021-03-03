@@ -1,0 +1,60 @@
+img {
+    border-radius: 10px;
+    border-color: transparent;
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+span {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.container span.mem_head {
+    font-size: xx-large;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 37.5%;
+    right: 0;
+    background-color: black;
+    overflow: hidden;
+    width: 25%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 10px;
+}
+  
+.container:hover .overlay{
+    bottom: 0;
+    height: 100%;
+}
+  
+.text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}

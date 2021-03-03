@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHP</title>
+        <link rel="icon" href="php.png">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="php.css">
+        <link rel="stylesheet" type="text/css" href="how.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <span id="head">MY PHP PROJECT</span>
+
+            <div class="nav_bar">
+                <ul>
+                    <li>
+                        <a href="index.html"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="brief.html"></i>Brief History</a>
+                    </li>
+                    <li>
+                        <a class="active" href="how.html"></i>How it works</a>
+                    </li>
+                    <li>
+                        <a href="reference.html"></i>References</a>
+                    </li>
+                    <li>
+                        <a href="members.html"></i>Members</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <span>HOW PHP WORKS</span>
+            
+            <p>
+                syntax:
+                    &lt?php
+                        //PHP code goes here
+                    ?&gt
+            </p>
+            <p>
+                The default file extension for PHP files is .php.
+                A PHP file normally contains HTML tags, and some PHP scripting code.
+                Below, we have an example of a simple PHP file structure, 
+                with a PHP script that uses a built-in PHP function "echo" to output the text "Hello PHP!" on a web page:
+            </p>
+            <span>the code:</span>
+            <div>
+                <img src=
+                "html_code.png" alt="">
+                <img src="php_code.png" alt="">
+            </div>
+        </div>
+
+        <span>the output:</span>
+
+        <div class="container">
+            <form action="insert.php" method="POST">
+                <label class="label_text" id="text" for="Login_name">Phone, email, or username</label>
+                <input type="text" id="Login_name" placeholder="" name="username" attribute=flag autofocus autocomplete="name number email" onfocus="changeColor('text')" onblur="removeColor('text')"/>
+                <label class="label_password" id="password" for="Login_password">Password</label>
+                <p><input type="password" id="Login_password" placeholder="" name="password" attribute=flag autocomplete="current-password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onfocus="changeColor('password')" onblur="removeColor('password')"></p>
+                <p><a id="login_button" href="thanks.html">Log in</a></p>
+            </form>
+    
+           <script>
+                function changeColor(obj) {
+                    document.getElementById(obj).style.color = "rgb(29,161,242)";
+                }
+    
+                function removeColor(obj) {
+                    document.getElementById(obj).style.color = "rgb(136, 153, 166)";
+                }
+            </script>
+            </form>
+        </div>
+    </body>
+</html>
